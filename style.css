@@ -47,7 +47,7 @@ main {
 article>div{ 
     display: flex;
     justify-content: space-between;
-
+    
 }
 
 .article__title{
@@ -71,6 +71,7 @@ article>div{
 }
 
 .article__button--close__disabled{
+    
     display: none;
 } 
 
@@ -83,7 +84,10 @@ article>div{
 display: none;
 }
 
-
+.article__line--separator{
+    border-bottom: 2px solid hsl(275, 100%, 97%);
+    margin: 1rem 0;
+}
 
 
 .attribution {
