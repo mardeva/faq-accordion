@@ -6,10 +6,13 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+
+
 main {
     margin: -4rem auto 2rem;
     background-color: hsl(275, 100%, 97%);
     position: absolute;
+
 }
 
 .section__container {
@@ -54,7 +57,7 @@ article>div {
 .article__button--open {
     border: none;
     background-color: hsl(0, 0%, 100%);
-    /* display: block; */
+    display: block;
 }
 
 .article__button--open__disabled {
@@ -66,7 +69,7 @@ article>div {
 .article__button--close {
     border: none;
     background-color: hsl(0, 0%, 100%);
-    /* display: block;     */
+    display: block;
 }
 
 .article__button--close__disabled {

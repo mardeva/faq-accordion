@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="prueba.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <title>Frontend Mentor | FAQ accordion</title>
+
+</head>
+
+<body>
+    <img src="./assets/images/background-pattern-mobile.svg" alt="Imagen de fondo">
+
+    <main>
+
+
+        <section class="section__container">
+            <div class="section__container--header">
+                <img src="./assets/images/icon-star.svg" alt="imagen estrella púrpura" class="section__container--icon">
+                <h1 class="section__container--title">FAQs</h1>
+            </div>
+
+
+            <section>
+                <!-- primer articulo -->
+                <article>
+                    <div class="article__container">
+                        <h2 class="article__title">What is Frontend Mentor, and how will it help me?</h2>
+
+                        
+                        <button onclick="{btn}" class="article__button--open"
+                            id="article__button--open" data-action="open-text">
+                            <img src="./assets/images/icon-plus.svg" class="article__button--open" data-action="open-text" alt="ícono signo +">
+                        </button>
+                        <button onclick="{btn2}" class="article__button--close article__button--close__disabled"
+                            id="article__button--close" data-action="close-text">
+                            <img src="./assets/images/icon-minus.svg" class="article__button--close" data-action="close-text" alt="ícono signo -">
+                        </button>
+
+
+                    </div>
+
+                        <p class="article__text article__text--disabled" id="description">Frontend Mentor offers realistic
+                        coding
+                        challenges to help
+                        developers improve their
+                        frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+                        all levels and ideal for portfolio building.</p>
+                </article>
+
+                <div class="article__line--separator">
+                </div>
+
+
+                <!-- segundo articulo -->
+                <article>
+                    <div>
+                        <h2 class="article__title">Is Frontend Mentor free?</h2>
+                        <button class="article__button"><img src="./assets/images/icon-plus.svg" alt=""></button>
+                    </div>
+                    <p class="article__text">Yes, Frontend Mentor offers both free and premium coding challenges, with
+                        the free
+                        option providing access to a range of projects suitable for all skill levels.</p>
+                </article>
+
+                <div class="article__line--separator">
+                </div>
+
+                <!-- tercer articulo -->
+                <article>
+                    <div>
+                        <h2 class="article__title">Can I use Frontend Mentor projects in my portfolio?</h2>
+                        <button class="article__button"><img src="./assets/images/icon-plus.svg" alt=""></button>
+                    </div>
+                    <p class="article__text">Yes, you can use projects completed on Frontend Mentor in your portfolio.
+                        It's an
+                        excellent
+                        way to showcase your skills to potential employers!</p>
+                </article>
+
+                <div class="article__line--separator">
+                </div>
+
+                <!-- cuarto articulo -->
+                <article>
+                    <div>
+                        <h2 class="article__title">How can I get help if I'm stuck on a Frontend Mentor challenge?</h2>
+                        <button class="article__button"><img src="./assets/images/icon-plus.svg" alt=""></button>
+                    </div>
+                    <p class="article__text">The best place to get help is inside Frontend Mentor's Discord community.
+                        There's a
+                        help
+                        channel where you can ask questions and seek support from other community members.</p>
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="prueba.js"></script>
+</body>
+
+</html>
