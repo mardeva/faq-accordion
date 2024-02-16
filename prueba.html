@@ -13,15 +13,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,700&display=swap"
         rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+
     <title>Frontend Mentor | FAQ accordion</title>
 
 </head>
 
 <body>
-    <img src="./assets/images/background-pattern-mobile.svg" alt="Imagen de fondo">
+    <!-- <img src="./assets/images/background-pattern-mobile.svg" class="img__background" alt="Imagen de fondo"> -->
+    <div class="img__background">
 
+    </div>
     <main>
-
 
         <section class="section__container">
             <div class="section__container--header">
@@ -29,27 +32,28 @@
                 <h1 class="section__container--title">FAQs</h1>
             </div>
 
-
             <section>
+
                 <!-- primer articulo -->
+
                 <article>
                     <div class="article__container">
                         <h2 class="article__title">What is Frontend Mentor, and how will it help me?</h2>
 
-                        
-                        <button onclick="{btn}" class="article__button--open"
-                            id="article__button--open" data-action="open-text">
-                            <img src="./assets/images/icon-plus.svg" class="article__button--open" data-action="open-text" alt="ícono signo +">
+                        <button onclick="{btn}" class="article__button--open" id="article__button--open"
+                            data-action="open-text">
+                            <img src="./assets/images/icon-plus.svg" class="article__button--open"
+                                data-action="open-text" alt="ícono signo +">
+
                         </button>
                         <button onclick="{btn2}" class="article__button--close article__button--close__disabled"
                             id="article__button--close" data-action="close-text">
-                            <img src="./assets/images/icon-minus.svg" class="article__button--close" data-action="close-text" alt="ícono signo -">
+                            <img src="./assets/images/icon-minus.svg" class="article__button--close"
+                                data-action="close-text" alt="ícono signo -">
                         </button>
-
-
                     </div>
 
-                        <p class="article__text article__text--disabled" id="description">Frontend Mentor offers realistic
+                    <p class="article__text article__text--disabled" id="description">Frontend Mentor offers realistic
                         coding
                         challenges to help
                         developers improve their
@@ -60,12 +64,22 @@
                 <div class="article__line--separator">
                 </div>
 
-
                 <!-- segundo articulo -->
+
                 <article>
-                    <div>
+                    <div class="article__container">
                         <h2 class="article__title">Is Frontend Mentor free?</h2>
-                        <button class="article__button"><img src="./assets/images/icon-plus.svg" alt=""></button>
+                        <button onclick="{btn}" class="article__button--open" id="article__button--open"
+                            data-action="open-text">
+                            <img src="./assets/images/icon-plus.svg" class="article__button--open"
+                                data-action="open-text" alt="ícono signo +">
+
+                        </button>
+                        <button onclick="{btn2}" class="article__button--close article__button--close__disabled"
+                            id="article__button--close" data-action="close-text">
+                            <img src="./assets/images/icon-minus.svg" class="article__button--close"
+                                data-action="close-text" alt="ícono signo -">
+                        </button>
                     </div>
                     <p class="article__text">Yes, Frontend Mentor offers both free and premium coding challenges, with
                         the free
@@ -76,10 +90,21 @@
                 </div>
 
                 <!-- tercer articulo -->
+
                 <article>
                     <div>
                         <h2 class="article__title">Can I use Frontend Mentor projects in my portfolio?</h2>
-                        <button class="article__button"><img src="./assets/images/icon-plus.svg" alt=""></button>
+                        <button onclick="{btn}" class="article__button--open" id="article__button--open"
+                            data-action="open-text">
+                            <img src="./assets/images/icon-plus.svg" class="article__button--open"
+                                data-action="open-text" alt="ícono signo +">
+
+                        </button>
+                        <button onclick="{btn2}" class="article__button--close article__button--close__disabled"
+                            id="article__button--close" data-action="close-text">
+                            <img src="./assets/images/icon-minus.svg" class="article__button--close"
+                                data-action="close-text" alt="ícono signo -">
+                        </button>
                     </div>
                     <p class="article__text">Yes, you can use projects completed on Frontend Mentor in your portfolio.
                         It's an
@@ -91,10 +116,20 @@
                 </div>
 
                 <!-- cuarto articulo -->
+
                 <article>
                     <div>
                         <h2 class="article__title">How can I get help if I'm stuck on a Frontend Mentor challenge?</h2>
-                        <button class="article__button"><img src="./assets/images/icon-plus.svg" alt=""></button>
+                        <button class="article__button--open" id="article__button--open" data-action="open-text">
+                            <img src="./assets/images/icon-plus.svg" class="article__button--open"
+                                data-action="open-text" alt="ícono signo +">
+
+                        </button>
+                        <button class="article__button--close article__button--close__disabled"
+                            id="article__button--close" data-action="close-text">
+                            <img src="./assets/images/icon-minus.svg" class="article__button--close"
+                                data-action="close-text" alt="ícono signo -">
+                        </button>
                     </div>
                     <p class="article__text">The best place to get help is inside Frontend Mentor's Discord community.
                         There's a
@@ -105,14 +140,12 @@
         </section>
     </main>
 
-
-
-
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="#">Your Name Here</a>.
     </div>
-    <script src="prueba.js"></script>
+    <!-- <script src="prueba.js"></script> -->
+    <script src="index.js"></script>
 </body>
 
 </html>
