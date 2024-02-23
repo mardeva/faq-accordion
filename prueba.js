@@ -4,16 +4,13 @@ const answer = document.querySelectorAll('.article__text');
 
 
 for (let i = 0; i < btnOpen.length; i++) {
-    console.log(btnOpen[i]);
-    btnOpen[i].addEventListener('click', function () {
-        console.log('boton abrir');
+    btnOpen[i].addEventListener('click', function () {        
         btnOpen[i].classList.toggle('article__button--open__disabled');
         btnClose[i].classList.toggle('article__button--close__disabled');
         answer[i].classList.toggle('article__text--disabled');
     });
 
 }
-
 
 for (let i = 0; i < btnClose.length; i++) {
 

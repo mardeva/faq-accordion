@@ -12,6 +12,7 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: hsl(275, 100%, 97%);
     height: 350px;
 }
 
@@ -21,13 +22,12 @@ main {
     background-color: hsl(275, 100%, 97%);
     position: absolute;
     color: hsl(292, 42%, 14%);
-
 }
 
 .section__container {
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 1.5rem;
     position: relative;
     z-index: 2;
     top: -9.2rem;
@@ -50,7 +50,6 @@ main {
     font-size: 2rem;
     font-weight: 800;
     padding-left: 1.2rem;
-
 }
 
 article>div {
@@ -60,8 +59,19 @@ article>div {
 }
 
 .article__title {
+    font-size: 1.05rem;
     font-weight: 600;
     margin-right: 1rem;
+}
+
+.article__title:hover{
+    color: hsl(281, 83%, 54%); 
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+button{
+    border: none;
 }
 
 /* boton abrir */
@@ -79,19 +89,19 @@ article>div {
 /* boton cerrar */
 
 .article__button--close {
-    border: none;
+    border: none;    
     background-color: hsl(0, 0%, 100%);
-    display: block;
+    display: block;    
 }
 
 .article__button--close__disabled {
-    display: none;
+    display: none;    
 }
 
 .article__text {
-    padding: 1.4rem 0;
-    font-size: 0.875rem;
-    line-height: 1.2rem;
+    padding: 1.4rem 0 0.6rem;
+    font-size: 0.88rem;
+    line-height: 1.3rem;
 }
 
 .article__text--disabled {
@@ -100,7 +110,7 @@ article>div {
 
 .article__line--separator {
     border-bottom: 2px solid hsl(275, 100%, 97%);
-    margin: 1rem 0;
+    margin: 0.99rem 0;
 }
 
 .attribution {
@@ -143,12 +153,10 @@ article>div {
 
     .section__container--title {
         font-size: 2.9rem;
-
     }
 
     article {
         margin: 0 1.5rem;
-
     }
 
     .article__text {
