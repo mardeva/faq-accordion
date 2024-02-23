@@ -1,44 +1,23 @@
-const btn = document.getElementById('article__button--open');
-const btn2 = document.getElementById('article__button--close');
+const btnOpen = document.querySelectorAll('.article__button--open');
+const btnClose = document.querySelectorAll('.article__button--close__disabled');
+const answer = document.querySelectorAll('.article__text');
 
 
-const txt = document.getElementById('description');
+for (let i = 0; i < btnOpen.length; i++) {
+    btnOpen[i].addEventListener('click', function () {        
+        btnOpen[i].classList.toggle('article__button--open__disabled');
+        btnClose[i].classList.toggle('article__button--close__disabled');
+        answer[i].classList.toggle('article__text--disabled');
+    });
 
-// Funciona solo en el primer boton
-// abrir boton + y abrir texto
-btn.addEventListener('click', (e) => {
-    const btnOpen = e.target.closest('button');
-    
-    console.log( typeof btnOpen)
+}
 
-    const abrir = () => {
-        if (btnOpen?.dataset?.action === "open-text") {
-            btn.classList.add('article__button--open__disabled');
-            txt.classList.remove('article__text--disabled');
-            btn2.classList.remove('article__button--close__disabled');
-        }
-    };
+for (let i = 0; i < btnClose.length; i++) {
 
-    abrir();
-    console.log('la funcion abrir funciona!');
+    btnClose[i].addEventListener('click', function () {
+        btnOpen[i].classList.toggle('article__button--open__disabled');
+        btnClose[i].classList.toggle('article__button--close__disabled');
+        answer[i].classList.toggle('article__text--disabled');
+    });
 
-    // cerrar botón "-" y texto
-    const cerrar = () => {
-        btn2.addEventListener('click', (e) => {
-            const btnClose = e.target.closest('button');
-
-            if (btnClose?.dataset?.action === 'close-text') {
-                btn.classList.remove('article__button--open__disabled');
-                txt.classList.add('article__text--disabled');
-                btn2.classList.add('article__button--close__disabled');
-            }
-        });
-    };
-    cerrar();
-
-
-});
-
-
-
-
+}
