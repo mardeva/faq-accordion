@@ -22,11 +22,13 @@ main {
     background-color: hsl(275, 100%, 97%);
     position: absolute;
     color: hsl(292, 42%, 14%);
+    height: 100vh;
 }
 
 .section__container {
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
+    box-sizing: content-box;
     padding: 0 1.5rem 1.5rem;
     position: relative;
     z-index: 2;
@@ -143,7 +145,7 @@ button{
     .section__container {
         width: 40%;
         top: -9.4rem;
-        padding: 1.5rem;
+        padding: 3rem 1.5rem 4rem;
     }
 
     .section__container--icon {
