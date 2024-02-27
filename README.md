@@ -21,6 +21,8 @@ Challenge de Frontend Mentor realizado a fines de practicar HTML5, CSS3, Javascr
 
 ![Web Design FAQ accordion challenge - Solution](<screenshots/FAQ accordion - web design.png>)
 
+![Mobile Design FAQ accordion challenge - Solution](<screenshots/FAQ accordion - mobile design.png>)
+
 
 ### Links
 
