@@ -19,7 +19,7 @@ Challenge de Frontend Mentor realizado a fines de practicar HTML5, CSS3, Javascr
 
 ### Screenshot
 
-![Web Design Social links profile challenge - Solution](WebDesign-solution.png)
+![Web Design FAQ accordion challenge - Solution](<screenshots/FAQ accordion - web design.png>)
 
 
 ### Links
